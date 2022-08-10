@@ -1,31 +1,32 @@
-# curriculum-databases-projects-template
+# Rails Blog
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+The Blog app is be a classic example of a blog website. It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
+## Built With
+
+- Ruby
+- Ruby On Rails
+- RSpec
+- PostgreSQL
+
+## Prerequisites
+
+- Have a working and updated browser
+- A source-code editor (preferably Visual Studio Code)
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+To get a local copy up and running follow these simple example steps.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- clone the repository using the command `git clone https://github.com/frank1738/Rails-blog.git`
 
+👤 **Author**
 
-## Authors
+## Frankline osoro
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@frank1738](https://github.com/frank1738)
+- Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
+- LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
 
 ## 🤝 Contributing
 
@@ -39,9 +40,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+The project has been inspired by:
+
+[Microverse](https://www.microverse.org)
 
 ## 📝 License
 
