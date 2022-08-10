@@ -1,6 +1,6 @@
 # Rails Blog
 
-The Blog app is be a classic example of a blog website. It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+The Blog app is a classic example of a blog website. It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## Built With
 
