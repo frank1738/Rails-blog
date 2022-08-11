@@ -12,3 +12,9 @@ class CreatePosts < ActiveRecord::Migration[7.0]
     end
   end
 end
+
+
+
+fourth_user = User.create(name: 'clinton', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'teacher')
+
+first_post = Post.create(author: fourth_user, title: 'Hello', text: 'This is my first post')
