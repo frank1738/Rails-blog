@@ -1,0 +1,9 @@
+<%= render partial: 'posts/post_card', locals: { post: post } %>
+
+<div class='comments'>
+    <% comments.each do |comment| %>
+      <div class='comment-card'>
+        <h3><%= comment.author_id %>: <span class='comment-content'><%= comment.text %></span></h3>
+      </div>
+    <% end %>
+</div>
