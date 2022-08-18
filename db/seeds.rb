@@ -44,4 +44,8 @@ tom = User.create!(
         frank.comments.create!(text: 'really nice post Michael', post: post1)
         frank.comments.create!(text: 'Absolutely amazing 1', post: post1)
         tom.comments.create!(text: 'Absolutely amazing 2', post: post2)
+<<<<<<< HEAD
     
+=======
+    
+>>>>>>> 44f06d3d00e7b5adc43d170e34d766731c7ca6c8
