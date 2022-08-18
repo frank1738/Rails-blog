@@ -4,8 +4,7 @@ class LikesController < ApplicationController
   end
 
   def create
-    like_params = params.require(:like).permit(:post_id)
-    @like = Like.new(post_id: like_params[:post_id], author_id: current_user.id)
+    @like = Like.new(post_params)
     respond_to do |format|
       format.html do
         if @like.save
@@ -16,5 +15,11 @@ class LikesController < ApplicationController
         end
       end
     end
+  end
+
+  private
+
+  def post_params
+    params.require(:like).permit(:post_id)
   end
 end

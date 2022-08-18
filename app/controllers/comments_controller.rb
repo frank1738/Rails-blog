@@ -4,8 +4,7 @@ class CommentsController < ApplicationController
   end
 
   def create
-    params_comment = params.require(:comment).permit(:text)
-    @comment = Comment.new(text: params_comment[:text], author_id: current_user.id, post_id: params[:post_id])
+    @comment = Comment.new(post_params)
     respond_to do |format|
       format.html do
         if @comment.save
@@ -16,5 +15,11 @@ class CommentsController < ApplicationController
         end
       end
     end
+  end
+
+  private
+
+  def post_params
+    params.require(:comment).permit(:text)
   end
 end
