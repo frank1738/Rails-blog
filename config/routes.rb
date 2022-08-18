@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :posts
   root 'users#index'
   resources :users, only: [:index,:show] do
-    resources :posts, only: [:index, :show]
+    resources :posts do
+      resources :comments, only: %i[new create destroy]
+      resources :likes, only: %i[create new]
+    end
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
 end

@@ -40,6 +40,11 @@
   margin-right: 3rem;
 }
 
+.img {
+  width: 100%;
+  height: 100%;
+}
+
 .user-info {
   border: 1px solid grey;
   padding: 1rem;
