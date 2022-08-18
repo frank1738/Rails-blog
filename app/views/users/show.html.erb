@@ -1,1 +1,11 @@
-<h1>Show User </h1>
+<section class='show-section'>
+    <%= render partial: 'shared/single_user', locals: { user: @user } %>
+    <div class='bio'><%= render partial: 'shared/bio_card', locals: { user: @user } %></div>
+    <div class='post-show'>
+  <% @user.recent_posts.each do |post| %>
+      <div class='single-post'><%= render partial: 'posts/post_card', locals: { post: post } %></div>
+  <% end %>
+  <button class='btn'><%= link_to 'See all posts', user_posts_path(@user) %></button>
+</div>
+</section>
+
