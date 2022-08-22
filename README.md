@@ -28,6 +28,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
 - LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
 
+## Jamila Moseka
+
+- GitHub: [@jmoseka](https://github.com/jmoseka)
+- Twitter: [@milamoseka](https://twitter.com/milamoseka)
+- LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
