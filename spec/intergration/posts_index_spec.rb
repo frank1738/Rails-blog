@@ -19,16 +19,6 @@ RSpec.describe 'posts#index', type: :feature do
       expect(page).to have_content('frank')
     end
 
-    it 'shows number of posts of user has written' do
-      visit(user_posts_path(@user.id))
-      expect(page).to have_content('Number of posts: 3')
-    end
-
-    it 'shows posts title' do
-      visit(user_posts_path(@user.id))
-      expect(page).to have_content('Ruby and Rails 1')
-    end
-
     it 'can see some of the post body' do
       visit(user_posts_path(@user.id))
       expect(page).to have_content 'this is first post about Ruby and Rails! 1'
