@@ -44,5 +44,17 @@ RSpec.describe 'posts#index', type: :feature do
       click_link 'Ruby and Rails 1'
       expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
     end
+    it 'I can see how many comments a post has' do
+      visit(user_posts_path(@user.id))
+      expect(page).to have_content 'comments: 0'
+    end
+    it 'I can see how many likes a post has' do
+      visit(user_posts_path(@user.id))
+      expect(page).to have_content 'likes: 0'
+    end
+    it 'I can see a section of pagination if there are more posts than fit the view' do
+      visit(user_posts_path(@user.id))
+      expect(page).to have_content 'pagination'
+    end
   end
 end

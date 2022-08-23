@@ -25,6 +25,10 @@ RSpec.describe 'users#show', type: :feature do
       visit(user_path(@user.id))
       expect(page).to have_content('Ruby and Rails 5')
     end
+    it 'I can see the number of posts the user has written' do
+      visit(user_path(@user.id))
+      expect(page).to have_content('Number of posts: 3')
+    end
     it 'I can see a button that lets me view all of a users posts.' do
       visit(user_path(@user.id))
       expect(page).to have_content('See all posts')
@@ -34,10 +38,11 @@ RSpec.describe 'users#show', type: :feature do
       click_link 'Ruby and Rails 1'
       expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
     end
-    it 'When I click to see all posts, it redirects me to the users posts index page.
+    it 'it redirects me to the users posts index page.
     ' do
-      visit(user_posts_path(@user))
-      expect(page).to have_content('Ruby and Rails 1')
+    visit(user_posts_path(@user.id))
+    click_link 'Ruby and Rails 1'
+    expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
     end
   end
 end
