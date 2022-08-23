@@ -4,6 +4,7 @@ RSpec.describe 'users#index', type: :feature do
   describe 'Post' do
     before(:all) do
       @user = User.first!
+      @post1 = Post.first!
     end
 
     it "shows user's profile picture" do
@@ -23,8 +24,9 @@ RSpec.describe 'users#index', type: :feature do
       expect(page).to have_content('Number of posts: 2')
     end
     it 'When I click on a user, I am redirected to that users show page' do
-      visit(users_path(@user.id))
-      expect(page).to have_content('Number of posts: 3')
+      visit(user_posts_path(@user.id))
+      click_link 'Ruby and Rails 1'
+      expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
     end
   end
 end
