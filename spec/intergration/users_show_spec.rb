@@ -40,9 +40,9 @@ RSpec.describe 'users#show', type: :feature do
     end
     it 'it redirects me to the users posts index page.
     ' do
-    visit(user_posts_path(@user.id))
-    click_link 'Ruby and Rails 1'
-    expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
+      visit(user_posts_path(@user.id))
+      click_link 'Ruby and Rails 1'
+      expect(page).to have_current_path user_post_path(@post1.author_id, @post1)
     end
   end
 end
