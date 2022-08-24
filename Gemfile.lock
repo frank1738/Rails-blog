@@ -227,7 +227,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.1)
+    tzinfo-data (1.2022.3)
       tzinfo (>= 1.0.0)
     warden (1.2.9)
       rack (>= 2.0.9)
