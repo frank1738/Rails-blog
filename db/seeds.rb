@@ -12,13 +12,13 @@ frank = User.create!(
   name: 'frank',
   photo: 'https://dummyimage.com/600x400/000/fff',
   bio: 'Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Pellentesque nulla nunc,
-      lacinia sed volutpat ut, tristique et tortor.
-      Proin a nulla lorem. Duis ac nunc lectus. Ut non felis id elit tempor gravida.
-      Aenean varius sem vel tellus elementum,
-      in eleifend mauris eleifend. Donec at tempor libero,
-      et maximus magna. Nulla vehicula convallis nulla.
-      Duis arcu turpis, egestas ultrices est at, scelerisque lobortis est.',
+    consectetur adipiscing elit. Pellentesque nulla nunc,
+    lacinia sed volutpat ut, tristique et tortor.
+    Proin a nulla lorem. Duis ac nunc lectus. Ut non felis id elit tempor gravida.
+    Aenean varius sem vel tellus elementum,
+    in eleifend mauris eleifend. Donec at tempor libero,
+    et maximus magna. Nulla vehicula convallis nulla.
+    Duis arcu turpis, egestas ultrices est at, scelerisque lobortis est.',
   posts_counter: 3
 )
 
@@ -26,13 +26,13 @@ tom = User.create!(
   name: 'tom',
   photo: 'https://dummyimage.com/600x400/000/fff',
   bio: 'Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Pellentesque nulla nunc,
-          lacinia sed volutpat ut, tristique et tortor.
-          Proin a nulla lorem. Duis ac nunc lectus. Ut non felis id elit tempor gravida.
-          Aenean varius sem vel tellus elementum,
-          in eleifend mauris eleifend. Donec at tempor libero,
-          et maximus magna. Nulla vehicula convallis nulla.
-          Duis arcu turpis, egestas ultrices est at, scelerisque lobortis est.',
+        consectetur adipiscing elit. Pellentesque nulla nunc,
+        lacinia sed volutpat ut, tristique et tortor.
+        Proin a nulla lorem. Duis ac nunc lectus. Ut non felis id elit tempor gravida.
+        Aenean varius sem vel tellus elementum,
+        in eleifend mauris eleifend. Donec at tempor libero,
+        et maximus magna. Nulla vehicula convallis nulla.
+        Duis arcu turpis, egestas ultrices est at, scelerisque lobortis est.',
   posts_counter: 2
 )
 
