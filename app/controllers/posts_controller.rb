@@ -14,9 +14,8 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.new(post_params)
-    @post.likes = 0
-    @post.comments = 0
-
+    @post.likes_counter = 0
+    @post.comments_counter = 0
     respond_to do |format|
       format.html do
         if @post.save
@@ -28,6 +27,17 @@ class PostsController < ApplicationController
           render :new, locals: { post: @post }
         end
       end
+    end
+  end
+
+  def destroy
+    @author = User.find(params[:user_id])
+    @post = @author.posts.find(params[:id])
+    @post.destroy
+    if @post.destroy
+      redirect_to user_path(params[:user_id])
+    else
+      redirect_to user_posts_path(params[:user_id], params[:id])
     end
   end
 

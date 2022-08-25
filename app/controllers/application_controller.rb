@@ -5,7 +5,15 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate_user!
 
+  def current_post
+    User.find(params[:user_id]).posts.find(params[:id] || params[:post_id])
+  end
+
   protected
+
+  # def current_user
+  #   @current_u = User.first
+  # end
 
   def update_allowed_parameters
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:name, :surname, :email, :password) }

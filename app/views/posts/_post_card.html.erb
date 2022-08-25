@@ -1,6 +1,6 @@
 <div class="post-card">
 
-    <h2><%= link_to post.title, user_post_path(post.id) %></h2>
+    <h2><%= post.title%></h2>
   <p class='post-content'><%= post.text.length > 120 ? post.text.first(100) + '...' : post.text %></p>
   <p class='post-stats'>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
 </div>
