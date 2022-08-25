@@ -19,16 +19,6 @@ class CommentsController < ApplicationController
     end
   end
 
-  def destroy
-    puts params
-    @post = Post.find(params[:post_id])
-    comment = @post.comment.find(params[:id])
-    if comment.destroy
-      redirect_to user_post_url
-    else
-      redirect_to user_posts_url
-    end
-  end
 
   private
 
