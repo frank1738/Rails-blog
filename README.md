@@ -20,7 +20,7 @@ To get a local copy up and running follow these simple example steps.
 
 - clone the repository using the command `git clone https://github.com/frank1738/Rails-blog.git`
 
-👤 **Author**
+👤 **Authors**
 
 ## Frankline osoro
 
